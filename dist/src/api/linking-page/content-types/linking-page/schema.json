@@ -1,0 +1,42 @@
+{
+    "kind": "singleType",
+    "collectionName": "linking_pages",
+    "info": {
+        "singularName": "linking-page",
+        "pluralName": "linking-pages",
+        "displayName": "linking-page",
+        "description": ""
+    },
+    "options": {
+        "draftAndPublish": true
+    },
+    "pluginOptions": {},
+    "attributes": {
+        "title": {
+            "type": "string",
+            "required": true
+        },
+        "buttons": {
+            "displayName": "button",
+            "type": "component",
+            "repeatable": true,
+            "component": "linking-page.button",
+            "required": true
+        },
+        "buttonIcons": {
+            "displayName": "button-icon",
+            "type": "component",
+            "repeatable": true,
+            "component": "linking-page.button-icon",
+            "required": true
+        },
+        "photo": {
+            "type": "media",
+            "multiple": false,
+            "required": true,
+            "allowedTypes": [
+                "images"
+            ]
+        }
+    }
+}

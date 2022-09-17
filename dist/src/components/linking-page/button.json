@@ -1,0 +1,18 @@
+{
+    "collectionName": "components_linking_page_buttons",
+    "info": {
+        "displayName": "button",
+        "icon": "mouse-pointer"
+    },
+    "options": {},
+    "attributes": {
+        "label": {
+            "type": "string",
+            "required": true
+        },
+        "link": {
+            "type": "string",
+            "required": true
+        }
+    }
+}
