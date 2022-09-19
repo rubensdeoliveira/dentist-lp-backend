@@ -7,7 +7,7 @@ export default ({ env }) => ({
               secretAccessKey: env('yRTpiIG50lKv53CgtCY78y4pMsPCX9hBvIWXdHjU'),
               region: env('us-east-1'),
               params: {
-                  Bucket: env('strapi-aline-isis-s3'),
+                  Bucket: env('strapi-aline-oliveira-s3'),
               },
           },
       },

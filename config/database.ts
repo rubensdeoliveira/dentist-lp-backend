@@ -2,9 +2,9 @@ export default ({ env }) => ({
   connection: {
     client: 'postgres',
     connection: {
-      host: env('DATABASE_HOST', 'strapi-aline-isis-database.c19sk8pgedy8.us-east-1.rds.amazonaws.com'),
+      host: env('DATABASE_HOST', 'strapi-aline-oliveira-database.c19sk8pgedy8.us-east-1.rds.amazonaws.com'),
       port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'strapi-aline-isis-database'),
+      database: env('DATABASE_NAME', 'strapi'),
       user: env('DATABASE_USERNAME', 'postgres'),
       password: env('DATABASE_PASSWORD', 'StrapiRDSAlineIsis')
     },
