@@ -3,11 +3,11 @@ export default ({ env }) => ({
       config: {
           provider: 'aws-s3',
           providerOptions: {
-              accessKeyId: env('AKIATVQP5WDO3J36X7X3'),
-              secretAccessKey: env('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'),
-              region: env('us-east-1'),
+              accessKeyId: env('AWS_ACCESS_KEY_ID'),
+              secretAccessKey: env('AWS_ACCESS_SECRET'),
+              region: env('AWS_REGION'),
               params: {
-                  Bucket: env('strapi-aline-oliveira-s3'),
+                  Bucket: env('AWS_BUCKET_NAME'),
               },
           },
       },
