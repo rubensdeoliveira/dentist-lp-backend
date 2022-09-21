@@ -1,9 +1,6 @@
-export default ({ env }) => ({
-  auth: {
-    secret: env('ADMIN_JWT_SECRET'),
-  },
-  apiToken: {
-    salt: env('API_TOKEN_SALT'),
-  },
-  url: "/dashboard"
-});
+export default ({ env }) => {
+  return {
+    url: env("PUBLIC_ADMIN_URL","/dashboard"),
+    serveAdminPanel: env("PUBLIC_ADMIN_URL") == undefined
+  }
+};
