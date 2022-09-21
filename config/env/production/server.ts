@@ -1,5 +1,5 @@
 export default ({ env }) => {
   return {
-    url: env("RENDER_EXTERNAL_URL", "")
+    url: env("PUBLIC_SERVER_URL", "")
   }
 };
