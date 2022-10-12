@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string",
-      "required": true
-    },
     "buttons": {
       "displayName": "button",
       "type": "component",
@@ -30,13 +26,37 @@
       "component": "linking-page.button-icon",
       "required": true
     },
-    "photo": {
-      "type": "media",
-      "multiple": false,
-      "required": true,
+    "cro": {
+      "type": "string",
+      "required": true
+    },
+    "specialty": {
+      "type": "string",
+      "required": true
+    },
+    "headerImage": {
       "allowedTypes": [
         "images"
-      ]
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "photo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "titleImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }
