@@ -1,17 +1,13 @@
-// const {parse} = require("pg-connection-string")
-import { parse } from 'pg-connection-string'
-
 export default ({ env }) => {
-  const { host,port,database,user,password } = parse(env("DATABASE_URL"))
   return {
     connection: {
-      client: 'postgres',
+      client: 'mysql',
       connection: {
-        host,
-        port,
-        database,
-        user,
-        password
+        host: env("DATABASE_HOST"),
+        port: env("DATABASE_PORT"),
+        database: env("DATABASE_DATABASE"),
+        user: env("DATABASE_USER"),
+        password: env("DATABASE_PASSWORD")
       },
       debug: false
     },
