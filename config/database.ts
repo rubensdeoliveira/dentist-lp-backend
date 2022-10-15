@@ -1,13 +1,15 @@
-export default ({ env }) => ({
-  connection: {
-    client: 'postgres',
+export default ({ env }) => {
+  return {
     connection: {
-      host: env('DATABASE_HOST', '127.0.0.1'),
-      port: env.int('DATABASE_PORT', 5432),
-      database: env('DATABASE_NAME', 'genericlp'),
-      user: env('DATABASE_USERNAME', 'postgres'),
-      password: env('DATABASE_PASSWORD', 'docker'),
-      ssl: env.bool('DATABASE_SSL', false),
+      client: 'mysql',
+      connection: {
+        host: env("DATABASE_HOST"),
+        port: env("DATABASE_PORT"),
+        database: env("DATABASE_DATABASE"),
+        user: env("DATABASE_USER"),
+        password: env("DATABASE_PASSWORD")
+      },
+      debug: false
     },
-  },
-});
+  }
+};
